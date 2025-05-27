@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    color: white;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #121212;
+    align-items: center;
+}
+
+header h1 {
+    color: #00f0ff;
+}
+
+nav a {
+    color: #ccc;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #00f0ff;
+}
+
+/* Hero Section with Image */
+.hero-with-image {
+    background: url('ee893f00-c31d-11e8-9739-0242ac110006.avif') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    color: white;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.highlight {
+    color: #00f0ff;
+}
+
+/* Sections */
+section {
+    padding: 60px 50px;
+}
+
+.services, .about, .contact-section {
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.card {
+    background-color: #222;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #00f0ff;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.stat {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    flex: 1;
+    transition: background 0.3s;
+}
+
+.stat:hover {
+    background: #2a2a2a;
+}
+
+/* Contact Section */
+.contact-icons i {
+    color: #00f0ff;
+    margin-right: 10px;
+}
+
+.contact-icons .link {
+    color: #00f0ff;
+}
+
+.contact-icons p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+.slide-up {
+    animation: slideUp 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
